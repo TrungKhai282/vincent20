@@ -1,16 +1,18 @@
 "use client";
 
-import { memo, useState } from "react";
+import { useState } from "react";
 import style from "./style.module.scss";
 import IconMenu from "@/assets/icons/menu.svg";
 import IconClose from "@/assets/icons/close.svg";
 import Link from "next/link";
 import clsx from "clsx";
 import contentData from "@/data.json";
+import dynamic from "next/dynamic";
 
-type ButtonMenuMobileProps = {};
+// const IconMenu = dynamic(() => import("@/assets/icons/menu.svg"));
+// const IconClose = dynamic(() => import("@/assets/icons/close.svg"));
 
-const ButtonMenuMobile = ({}: ButtonMenuMobileProps) => {
+const ButtonMenuMobile = () => {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -18,7 +20,11 @@ const ButtonMenuMobile = ({}: ButtonMenuMobileProps) => {
   };
 
   return (
-    <>
+    <div
+      style={{
+        display: "contents",
+      }}
+    >
       <button className={style.menuBtn} onClick={toggleMenu}>
         <IconMenu />
       </button>
@@ -40,8 +46,8 @@ const ButtonMenuMobile = ({}: ButtonMenuMobileProps) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default memo(ButtonMenuMobile);
+export default ButtonMenuMobile;

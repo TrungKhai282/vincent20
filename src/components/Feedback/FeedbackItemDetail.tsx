@@ -1,4 +1,3 @@
-import { memo } from "react";
 import style from "./style.module.scss";
 import Image from "next/image";
 import clsx from "clsx";
@@ -32,4 +31,4 @@ const FeedbackItemDetail = ({ detail }: FeedbackItemDetailProps) => {
   );
 };
 
-export default memo(FeedbackItemDetail);
+export default FeedbackItemDetail;

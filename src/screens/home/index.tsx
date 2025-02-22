@@ -1,15 +1,15 @@
-import { memo } from "react";
 import style from "./style.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import AutoplayVideo from "@/components/AutoplayVideo";
-import Feedback from "@/components/Feedback";
+
 import clsx from "clsx";
 import contentData from "@/data.json";
+import dynamic from "next/dynamic";
 
-type HomePageProps = {};
+const AutoplayVideo = dynamic(() => import("@/components/AutoplayVideo"));
+const Feedback = dynamic(() => import("@/components/Feedback"));
 
-const HomePage = ({}: HomePageProps) => {
+const HomePage = () => {
   return (
     <>
       <section className={style.banner}>
@@ -226,4 +226,4 @@ const HomePage = ({}: HomePageProps) => {
   );
 };
 
-export default memo(HomePage);
+export default HomePage;

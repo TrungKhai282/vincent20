@@ -1,12 +1,10 @@
-import { memo } from "react";
 import style from "./style.module.scss";
 import contentData from "@/data.json";
-type FooterProps = {};
 
-const Footer = ({}: FooterProps) => {
+const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className={style.footer}>
+    <div className={style.footer}>
       <div className={style.logo}>VINCENT 20</div>
       <div className={style.phone}>
         Liên hệ tư vấn: {contentData.contact.phone}
@@ -14,8 +12,8 @@ const Footer = ({}: FooterProps) => {
       <div className={style.copyright}>
         Copyright © {year} by TrungKhai - Khainguyentrantrung@gmail.com
       </div>
-    </footer>
+    </div>
   );
 };
 
-export default memo(Footer);
+export default Footer;

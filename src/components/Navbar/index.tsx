@@ -1,16 +1,14 @@
-import { memo } from "react";
 import style from "./style.module.scss";
 import clsx from "clsx";
 import Link from "next/link";
-import IconMenu from "@/assets/menu.svg";
-import ButtonMenuMobile from "./ButtonMenuMobile";
 import contentData from "@/data.json";
 
-type NavbarProps = {};
+import dynamic from "next/dynamic";
+const ButtonMenuMobile = dynamic(() => import("./ButtonMenuMobile"));
 
-const Navbar = ({}: NavbarProps) => {
+const Navbar = () => {
   return (
-    <header
+    <div
       className={clsx(style.navbar, "animate__animated animate__fadeInDown")}
     >
       <div className={style.container}>
@@ -34,11 +32,12 @@ const Navbar = ({}: NavbarProps) => {
         </div>
         <div className={style.mobile}>
           <div className={style.logo}>VINCENT 20</div>
+
           <ButtonMenuMobile />
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 
-export default memo(Navbar);
+export default Navbar;
