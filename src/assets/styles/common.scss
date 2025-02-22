@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+// Fonts
+$font_main: "Noto Sans", serif;
+
+//Color
+$color_black: #121213;
+$color_white: #ffffff;
+$color_primary_1: #f8133c;
+
+// Screen size
+$XXL: 1920px;
+$XL: 1440px;
+$LG: 1280px;
+$MD: 1024px;
+$SM: 768px;
+$XS: 414px;
+$XXS: 320px;
+
+// media queries responsive
+@mixin Responsive($canvas) {
+  @if $canvas == XXS {
+    @media only screen and (max-width: $XXS) {
+      @content;
+    }
+  } @else if $canvas == XS {
+    @media only screen and (max-width: $XS) {
+      @content;
+    }
+  } @else if $canvas == SM {
+    @media only screen and (max-width: $SM) {
+      @content;
+    }
+  } @else if $canvas == MD {
+    @media only screen and (max-width: $MD) {
+      @content;
+    }
+  } @else if $canvas == LG {
+    @media only screen and (max-width: $LG) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media only screen and (max-width: $XL) {
+      @content;
+    }
+  } @else if $canvas == XXL {
+    @media only screen and (max-width: $XXL) {
+      @content;
+    }
+  }
+}
+
+@mixin Container {
+  max-width: $LG;
+  margin: 0 auto;
+  padding-left: 72px;
+  padding-right: 72px;
+  @include Responsive(MD) {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  @include Responsive(SM) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@mixin Button($size) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-wrap: nowrap;
+  // border-radius: 4px;
+
+  @if $size == L {
+    padding: 8px 16px;
+    font-size: 1rem;
+  } @else if $size == S {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  } @else if $size == XL {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+  } @else if $size == XXL {
+    padding: 24px 48px;
+    font-size: 1.1rem;
+  }
+}

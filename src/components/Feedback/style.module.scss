@@ -1,0 +1,122 @@
+@use "@/assets/styles/common.scss" as *;
+
+.feedback {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px 0;
+
+  .personList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+    border-top: 1px solid rgba($color: white, $alpha: 0.2);
+    width: 100%;
+    max-width: 1000px;
+    padding: 48px 0;
+
+    @include Responsive(SM) {
+      flex-wrap: wrap;
+    }
+
+    .person {
+      display: flex;
+      gap: 12px;
+      width: fit-content;
+      opacity: 0.5;
+
+      &.active {
+        opacity: 1;
+      }
+
+      .avatar {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .info {
+        .name {
+          font-weight: 800;
+          font-size: 1.1rem;
+          margin-bottom: 8px;
+
+          @include Responsive(MD) {
+            font-size: 1rem;
+          }
+        }
+
+        .job {
+          @include Responsive(MD) {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.feedbackItemDetail {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  gap: 48px;
+  align-items: center;
+  padding: 24px 0;
+  @include Responsive(SM) {
+    flex-direction: column;
+    order: 1;
+  }
+
+  .text {
+    width: 50%;
+    @include Responsive(SM) {
+      width: 100%;
+    }
+
+    .message {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 24px;
+
+      @include Responsive(MD) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .description {
+      margin-bottom: 48px;
+      color: rgba($color: white, $alpha: 0.8);
+    }
+
+    .name {
+      font-weight: 800;
+    }
+
+    .place {
+      color: $color_primary_1;
+    }
+  }
+
+  .image {
+    width: 50%;
+    @include Responsive(SM) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "home": {
+    "banner": {
+      "slogan": "Ở đây chúng tôi có xăm hình nghệ thuật",
+      "description": "Đến với Vincent20 để được trải nghiệm dịch vụ xăm hình uy tín, xăm không đẹp, thối lại tiền!"
+    },
+    "why": {
+      "title": "Vì sao nên chọn Vincent20",
+      "description": "Một hình xăm đẹp, một dịch vụ tốt với chế độ bảo hành lâu dài. Chúng tôi đồng hành cùng bạn qua từng hình xăm.",
+      "reasons": [
+        {
+          "icon": "/icons/tattoo.svg",
+          "label": "Thợ xăm chuyên nghiệp",
+          "description": "Tụi tui có những artist có tầm và có tầm, đảm bảo bạn sẽ được một hình xăm tuyệt vời"
+        },
+        {
+          "icon": "/icons/heart.svg",
+          "label": "Thiết kế cá nhân",
+          "description": "Bạn có thể nhận được những hình xăm độc bản, chỉ có mình bạn có. Để tụi tui lo."
+        }
+      ],
+      "images": ["/images/why1.jpg", "/images/why2.jpg"]
+    },
+    "service": {
+      "title": "Về dịch vụ",
+      "description": "Chúng tôi cung cấp những dịch vụ dưới đây. Bạn chọn cái nào cũng được, đến đây và lao vào vòng tay của Vincent20.",
+      "services": [
+        {
+          "icon": "/icons/machine.svg",
+          "label": "Xăm hình",
+          "description": "Thiết kế và xăm hình",
+          "price": "500.000 đ"
+        },
+        {
+          "icon": "/icons/piercing.svg",
+          "label": "Xỏ khuyên",
+          "description": "Xỏ khuyên tai, khuyên mũi, khuyên rốn và vân vân",
+          "price": "500.000 đ"
+        }
+      ]
+    },
+    "video": "/videos/studio.mp4",
+    "portfolio": {
+      "title": "Xem những tác phẩm của chúng tôi",
+      "description": "Dưới đây là một vài tác phẩm tiêu biểu mà chúng tôi từng hoàn thiện. Mỗi hình xăm đều được chăm chút tỉ mỉ. Bạn có thể tham khảo thử và lên ý tưởng cho hình xăm của mình."
+    },
+    "feedback": {
+      "title": "Khách hàng nói gì",
+      "description": "Dưới đây là những bình luận, đánh giá khách quan của các khách hàng đã từng trải nghiệm dịch vụ tại Vincent20.",
+      "comments": [
+        {
+          "name": "Trung Khải",
+          "avatar": "/feedback/khai.png",
+          "image": "/images/feedback.jpg",
+          "job": "Lập trình viên",
+          "short": "Thợ xăm nhiệt tình",
+          "full": "Tôi thấy ở đây thợ xăm rất là nhiệt tình vui vẻ, hình xăm rất đẹp, phù hợp với túi tiền.",
+          "place": "Gò vấp, TP. Hồ Chí Minh"
+        },
+        {
+          "name": "Hồng Anh",
+          "avatar": "/feedback/honganh.png",
+          "image": "/images/feedback.jpg",
+          "job": "Makerting",
+          "short": "Tôi muốn xuất",
+          "full": "Anh ấy đâm tôi xâu và mạnh. Tuy nhiên kết quả rất đã, tôi rung người.",
+          "place": "Gò vấp, TP. Hồ Chí Minh"
+        }
+      ]
+    },
+    "follow": {
+      "title": "Theo dõi chúng tôi",
+      "description": "Hãy theo dõi chúng tôi trên các nền tảng mạng xã hội để có thêm những ý tưởng xăm hình độc đáo."
+    }
+  },
+  "social": [
+    {
+      "icon": "/icons/facebook.png",
+      "url": ""
+    },
+    {
+      "icon": "/icons/instagram.png",
+      "url": ""
+    },
+    {
+      "icon": "/icons/threads.png",
+      "url": ""
+    },
+    {
+      "icon": "/icons/tiktok.png",
+      "url": ""
+    }
+  ],
+  "contact": {
+    "book_link": "",
+    "phone": "0987654321"
+  }
+}

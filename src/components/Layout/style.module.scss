@@ -1,0 +1,9 @@
+@use "@/assets/styles/common.scss" as *;
+
+.layout {
+  min-height: 100vh;
+
+  .main {
+    padding: 100px 0 0;
+  }
+}
