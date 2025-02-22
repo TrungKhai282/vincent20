@@ -203,7 +203,12 @@ const HomePage = ({}: HomePageProps) => {
             </div>
             <div className={style.listSocial}>
               {contentData.social.map((item) => (
-                <Link href={item.url} target="_blank" className={style.social}>
+                <Link
+                  key={item.icon}
+                  href={item.url}
+                  target="_blank"
+                  className={style.social}
+                >
                   <Image
                     layout="responsive"
                     width={0}
