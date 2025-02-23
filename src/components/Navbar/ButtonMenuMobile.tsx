@@ -4,7 +4,7 @@ import { useState } from "react";
 import style from "./style.module.scss";
 import IconMenu from "@/assets/icons/menu.svg";
 import IconClose from "@/assets/icons/close.svg";
-import Link from "next/link";
+import Link, { LinkProps } from "next/link";
 import clsx from "clsx";
 import contentData from "@/data.json";
 import dynamic from "next/dynamic";
@@ -34,8 +34,12 @@ const ButtonMenuMobile = () => {
             <IconClose />
           </button>
           <div className={style.navLinks}>
-            <Link href={"/"}>Trang chủ</Link>
-            <Link href={"/lien-he"}>Liên hệ</Link>
+            <Link href={"/"} onClick={toggleMenu}>
+              Trang chủ
+            </Link>
+            <Link href={"/lien-he"} onClick={toggleMenu}>
+              Liên hệ
+            </Link>
             <Link
               href={contentData.contact.book_link}
               className={style.btnBook}

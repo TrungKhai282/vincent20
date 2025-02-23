@@ -14,7 +14,9 @@ const Navbar = () => {
       <div className={style.container}>
         <div className={style.desktop}>
           <div className={style.left}>
-            <div className={style.logo}>VINCENT 20</div>
+            <Link href={"/"} className={style.logo}>
+              VINCENT 20
+            </Link>
           </div>
           <div className={style.right}>
             <div className={style.navLinks}>
@@ -30,7 +32,9 @@ const Navbar = () => {
           </div>
         </div>
         <div className={style.mobile}>
-          <div className={style.logo}>VINCENT 20</div>
+          <Link href={"/"} className={style.logo}>
+            VINCENT 20
+          </Link>
           <ButtonMenuMobile />
         </div>
       </div>

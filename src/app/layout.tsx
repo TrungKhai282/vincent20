@@ -2,6 +2,12 @@ import "@/assets/styles/global.scss";
 import Layout from "@/components/Layout";
 import "animate.css";
 import { Metadata } from "next";
+import { Noto_Sans } from "next/font/google";
+
+const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Vincent20 Tattoo",
@@ -42,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={notoSans.className}>
       <Layout>{children}</Layout>
     </html>
   );
