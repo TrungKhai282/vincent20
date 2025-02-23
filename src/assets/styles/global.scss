@@ -16,36 +16,32 @@ body,
     color: $color_white;
   }
 
-  // ::-webkit-scrollbar {
-  //   width: 18px;
-  //   position: absolute;
-  //   z-index: 30;
-  //   display: none;
+  ::-webkit-scrollbar {
+    width: 18px;
+    position: absolute;
+    z-index: 30;
+    // display: none;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+    transition: all ease 0.2s;
 
-  //   @include Responsive(MD) {
-  //     width: 0px;
-  //   }
-  // }
-  // ::-webkit-scrollbar-track {
-  //   background-color: rgba(0, 0, 0, 0.3);
-  // }
-  // ::-webkit-scrollbar-thumb {
-  //   background-color: rgba(128, 128, 128, 0.4);
-  //   border-radius: 20px;
-  //   border: 6px solid transparent;
-  //   background-clip: content-box;
-  //   transition: all ease 0.2s;
+    &:hover {
+      background-color: lightgrey !important;
+    }
+  }
 
-  //   &:hover {
-  //     background-color: lightgrey !important;
-  //   }
-  // }
-
-  // :hover {
-  //   ::-webkit-scrollbar-thumb {
-  //     background-color: grey;
-  //   }
-  // }
+  :hover {
+    ::-webkit-scrollbar-thumb {
+      background-color: grey;
+    }
+  }
 }
 
 body {

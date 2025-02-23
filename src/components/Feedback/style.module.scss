@@ -6,33 +6,42 @@
   flex-direction: column;
   padding: 24px 0;
 
+  .scrollX {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 1000px;
+  }
+
   .personList {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 72px;
-    border-top: 1px solid rgba($color: white, $alpha: 0.2);
-    width: 100%;
-    max-width: 1000px;
+    gap: 48px;
     padding: 48px 0;
-
-    @include Responsive(SM) {
-      flex-wrap: wrap;
-    }
+    width: fit-content;
+    min-width: 100%;
 
     .person {
       display: flex;
-      gap: 12px;
-      width: fit-content;
-      opacity: 0.5;
+      opacity: 0.3;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: all ease 0.1s;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 4px;
 
       &.active {
         opacity: 1;
+        outline: 2px solid rgba($color: white, $alpha: 0.5);
       }
 
       .avatar {
-        width: 60px;
-        height: 60px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -42,24 +51,6 @@
         img {
           width: 100%;
           height: auto;
-        }
-      }
-
-      .info {
-        .name {
-          font-weight: 800;
-          font-size: 1.1rem;
-          margin-bottom: 8px;
-
-          @include Responsive(MD) {
-            font-size: 1rem;
-          }
-        }
-
-        .job {
-          @include Responsive(MD) {
-            font-size: 0.8rem;
-          }
         }
       }
     }
@@ -73,9 +64,9 @@
   gap: 48px;
   align-items: center;
   padding: 24px 0;
+  border-top: 1px dashed rgba($color: white, $alpha: 0.2);
   @include Responsive(SM) {
     flex-direction: column;
-    order: 1;
   }
 
   .text {

@@ -8,7 +8,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 0 0;
   position: relative;
   display: flex;
 
@@ -453,24 +452,14 @@
 }
 
 .video {
-  height: 600px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   border-width: 2px 0 1px 0;
 
-  @include Responsive(MD) {
-    height: 400px;
-  }
-  @include Responsive(XS) {
-    height: 200px;
-  }
-
   .autoVideo {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
+    width: 100%;
     height: auto;
     object-fit: cover;
   }

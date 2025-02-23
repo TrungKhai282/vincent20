@@ -15,34 +15,32 @@ const Feedback = ({ data }: FeedbackProps) => {
   return (
     <Suspense>
       <div className={style.feedback}>
+        <div className={style.scrollX}>
+          <div className={style.personList}>
+            {data.map((item: any) => (
+              <div
+                key={item.name}
+                className={clsx(style.person, {
+                  [style.active]: person === item.name,
+                })}
+                onClick={() => setPerson(item.name)}
+              >
+                <div className={style.avatar}>
+                  <Image
+                    layout="responsive"
+                    width={0}
+                    height={0}
+                    alt="heart"
+                    src={item.avatar}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
         <FeedbackItemDetail
           detail={data?.find((item: any) => item.name === person)}
         />
-        <div className={style.personList}>
-          {data.map((item: any) => (
-            <div
-              key={item.name}
-              className={clsx(style.person, {
-                [style.active]: person === item.name,
-              })}
-              onClick={() => setPerson(item.name)}
-            >
-              <div className={style.avatar}>
-                <Image
-                  layout="responsive"
-                  width={0}
-                  height={0}
-                  alt="heart"
-                  src={item.avatar}
-                />
-              </div>
-              <div className={style.info}>
-                <div className={style.name}>{item.name}</div>
-                <div className={style.job}>{item.job}</div>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </Suspense>
   );
