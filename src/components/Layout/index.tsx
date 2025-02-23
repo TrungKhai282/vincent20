@@ -11,13 +11,13 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={style.layout}>
+    <body className={style.layout}>
       <Navbar />
-      <div className={clsx(style.main, "animate__animated animate__fadeIn")}>
+      <main className={clsx(style.main, "animate__animated animate__fadeIn")}>
         {children}
-      </div>
+      </main>
       <Footer />
-    </div>
+    </body>
   );
 };
 

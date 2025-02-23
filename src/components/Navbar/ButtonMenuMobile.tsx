@@ -35,8 +35,7 @@ const ButtonMenuMobile = () => {
           </button>
           <div className={style.navLinks}>
             <Link href={"/"}>Trang chủ</Link>
-            <Link href={"/"}>Về chúng tôi</Link>
-            <Link href={"/"}>Liên hệ</Link>
+            <Link href={"/lien-he"}>Liên hệ</Link>
             <Link
               href={contentData.contact.book_link}
               className={style.btnBook}

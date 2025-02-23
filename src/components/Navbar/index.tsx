@@ -8,7 +8,7 @@ const ButtonMenuMobile = dynamic(() => import("./ButtonMenuMobile"));
 
 const Navbar = () => {
   return (
-    <div
+    <header
       className={clsx(style.navbar, "animate__animated animate__fadeInDown")}
     >
       <div className={style.container}>
@@ -19,8 +19,7 @@ const Navbar = () => {
           <div className={style.right}>
             <div className={style.navLinks}>
               <Link href={"/"}>Trang chủ</Link>
-              <Link href={"/"}>Về chúng tôi</Link>
-              <Link href={"/"}>Liên hệ</Link>
+              <Link href={"/lien-he"}>Liên hệ</Link>
               <Link
                 href={contentData.contact.book_link}
                 className={style.btnBook}
@@ -32,11 +31,10 @@ const Navbar = () => {
         </div>
         <div className={style.mobile}>
           <div className={style.logo}>VINCENT 20</div>
-
           <ButtonMenuMobile />
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

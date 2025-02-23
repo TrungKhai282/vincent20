@@ -154,12 +154,12 @@ const HomePage = () => {
           </Link>
         </div>
       </section>
-      <section className={style.video}>
+      {/* <section className={style.video}>
         <AutoplayVideo
           src={contentData.home.video}
           className={style.autoVideo}
         />
-      </section>
+      </section> */}
       <section className={style.portfolio}>
         <div className={style.container}>
           <div className={style.image}>

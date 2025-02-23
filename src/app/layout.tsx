@@ -1,4 +1,5 @@
 import "@/assets/styles/global.scss";
+import Layout from "@/components/Layout";
 import "animate.css";
 import { Metadata } from "next";
 
@@ -42,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <Layout>{children}</Layout>
     </html>
   );
 }

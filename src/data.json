@@ -93,6 +93,16 @@
   ],
   "contact": {
     "book_link": "",
-    "phone": "0987654321"
+    "phone": "0987654321",
+    "chats": [
+      {
+        "icon": "/icons/messenger.png",
+        "url": ""
+      },
+      {
+        "icon": "/icons/zalo.png",
+        "url": ""
+      }
+    ]
   }
 }
