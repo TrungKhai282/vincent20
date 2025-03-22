@@ -43,6 +43,7 @@ const ButtonMenuMobile = () => {
             <Link
               href={contentData.contact.book_link}
               className={style.btnBook}
+              target="_blank"
             >
               Đặt lịch
             </Link>

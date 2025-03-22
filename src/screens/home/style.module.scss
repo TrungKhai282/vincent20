@@ -110,7 +110,7 @@
         @include Button(XXL);
         outline: 1px solid white;
         font-weight: 700;
-
+        color: white;
         @include Responsive(MD) {
           @include Button(L);
         }

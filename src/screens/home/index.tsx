@@ -25,7 +25,7 @@ const HomePage = () => {
               width={0}
               height={0}
               alt="Logo image banner"
-              src={"/images/logohomepagebanner.png"}
+              src={"/images/logo.png"}
             />
           </div>
           <div
@@ -44,13 +44,14 @@ const HomePage = () => {
           >
             {contentData.home.banner.description}
           </div>
-          <div className={style.action}>
+          {/* <div className={style.action}>
             <Link
               href={contentData.contact.book_link}
               className={clsx(
                 style.btnBook,
                 "animate__animated animate__bounceIn delay300"
               )}
+              target="_blank"
             >
               Đặt lịch
             </Link>
@@ -63,7 +64,7 @@ const HomePage = () => {
             >
               Về chúng tôi
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className={style.why}>
@@ -92,7 +93,7 @@ const HomePage = () => {
                 </div>
               ))}
             </div>
-            <Link href={"/"} className={style.btnAbout}>
+            <Link href={"/lien-he"} className={style.btnAbout}>
               Tìm hiểu thêm về chúng tôi
             </Link>
           </div>
@@ -149,7 +150,11 @@ const HomePage = () => {
               </div>
             ))}
           </div>
-          <Link href={contentData.contact.book_link} className={style.btnBook}>
+          <Link
+            href={contentData.contact.book_link}
+            className={style.btnBook}
+            target="_blank"
+          >
             Đặt lịch ngay
           </Link>
         </div>
@@ -168,7 +173,7 @@ const HomePage = () => {
               width={0}
               height={0}
               alt="heart"
-              src={"/images/portfolio.png"}
+              src={"/images/portfolio.jpg"}
             />
           </div>
           <div className={style.text}>
@@ -178,7 +183,11 @@ const HomePage = () => {
             <div className={style.description}>
               {contentData.home.portfolio.description}
             </div>
-            <Link href={"/"} className={style.btnView}>
+            <Link
+              href={"https://www.facebook.com/profile.php?id=61560075045995"}
+              className={style.btnView}
+              target="_blank"
+            >
               Xem ngay
             </Link>
           </div>

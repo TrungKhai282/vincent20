@@ -2,7 +2,7 @@
   "home": {
     "banner": {
       "slogan": "Ở đây chúng tôi có xăm hình nghệ thuật",
-      "description": "Đến với Vincent20 để được trải nghiệm dịch vụ xăm hình uy tín, xăm không đẹp, thối lại tiền!"
+      "description": "Đến với Vincent20 để được trải nghiệm dịch vụ xăm hình uy tín, xăm không đẹp - thối lại tiền!"
     },
     "why": {
       "title": "Vì sao nên chọn Vincent20",
@@ -11,7 +11,7 @@
         {
           "icon": "/icons/tattoo.svg",
           "label": "Thợ xăm chuyên nghiệp",
-          "description": "Tụi tui có những artist có tầm và có tầm, đảm bảo bạn sẽ được một hình xăm tuyệt vời"
+          "description": "Tụi tui có những artist có tâm và có tầm, đảm bảo bạn sẽ được một hình xăm tuyệt vời"
         },
         {
           "icon": "/icons/heart.svg",
@@ -51,7 +51,7 @@
         {
           "name": "Trung Khải",
           "avatar": "/feedback/khai.png",
-          "image": "/images/feedback.jpg",
+          "image": "/feedback/tattoo_khai.jpg",
           "job": "Lập trình viên",
           "short": "Thợ xăm nhiệt tình",
           "full": "Tôi thấy ở đây thợ xăm rất là nhiệt tình vui vẻ, hình xăm rất đẹp, phù hợp với túi tiền.",
@@ -60,7 +60,7 @@
         {
           "name": "Hồng Anh",
           "avatar": "/feedback/honganh.png",
-          "image": "/images/feedback.jpg",
+          "image": "/feedback/tattoo_honganh.jpg",
           "job": "Makerting",
           "short": "Tôi muốn xuất",
           "full": "Anh ấy đâm tôi xâu và mạnh. Tuy nhiên kết quả rất đã, tôi rung người.",
@@ -76,7 +76,7 @@
   "social": [
     {
       "icon": "/icons/facebook.png",
-      "url": ""
+      "url": "https://www.facebook.com/profile.php?id=61560075045995"
     },
     {
       "icon": "/icons/instagram.png",
@@ -92,12 +92,12 @@
     }
   ],
   "contact": {
-    "book_link": "",
+    "book_link": "https://m.me/303248392879805",
     "phone": "0987654321",
     "chats": [
       {
         "icon": "/icons/messenger.png",
-        "url": ""
+        "url": "https://m.me/303248392879805"
       },
       {
         "icon": "/icons/zalo.png",
